@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgba(227, 227, 227, 0.216);
+}
+
+.header {
+    width: 100vw;
+    height: 50px;
+    background-color: rgba(53, 151, 222, 0.75);
+    position: relative;
+    position: fixed; /*tạo thuộc tính lơ lửng không ảnh hưởng khi lăn chuột*/
+    z-index: 1
+}
+.header img {
+    height: 55px;
+    position: absolute;
+    left: 10px
+}
+
+.header h1{
+    text-align: center;
+    line-height: 50px;
+    color: white
+}
+
+.container {
+    margin: 0 200px;
+    padding-top: 50px;
+    /* background-color:rgb(233, 233, 233); */
+}
+
+.donhang {
+
+    padding-top: 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-bottom:  1px solid rgb(215, 210, 210);
+    background-color: white;
+}
+
+.donhang div {
+    font-size: 20px;
+    width: 250px;
+    
+}
+
+.contain {
+    display: flex;
+    
+}
+
+.contain .sp {
+    width: 80%;
+    height: 60vh;
+}
+
+.contain .sp .sp1{
+    border: 1px solid rgb(215, 210, 210);
+    height: 175px;
+    margin-top: 5px;
+    display: flex;
+    /* background-color: rgba(243, 243, 243, 0.2); */
+    background-color: white;
+}
+
+.contain .sp .sp1 .img{
+    width: 280px;
+    margin-right: 10px;
+}
+
+.contain .sp .sp1 .noidung {
+    width: 100%;
+
+}
+
+.contain .sp .sp1 .noidung .name-soluong {
+    height: 50%;
+    width: 98%;
+    display: flex;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+
+.contain .sp .sp1 .noidung .name-soluong .name {
+    width: 70%;
+}
+
+.contain .sp .sp1 .noidung .gia-ghichu {
+    padding-left: 10px;
+    font-size: 25px;
+    height: 40%;
+    display: flex;
+}
+
+.contain .sp .sp1 .noidung .gia-ghichu .gia {
+    width: 30%;
+    color: red
+    /* border: 1px solid; */
+
+}
+
+.contain .sp .sp1 .noidung .gia-ghichu .ghichu {
+    width: 70%;
+    color: red
+
+}
+
+.contain .hoadon {
+    border: 1px solid rgb(215, 210, 210);
+    margin: 5px 5px;
+    min-height: 71vh;
+    width: 20%;
+    padding: 5px 10px;
+    background-color: white
+}
+
+.contain .hoadon h3 {
+    text-align: center
+}
+
+.contain .hoadon div {
+    padding: 0 5px;
+    text-align: center
+}
+
+.contain .hoadon table {
+    width: 100%;
+    padding: 0 10px
+}
+
+.contain .hoadon table td {
+    padding: 5px 0px
+}
+
+.contain .hoadon table .sl {
+    text-align: center
+}
+
+.contain .hoadon .text {
+    text-align: left
+}
+
+.contain .hoadon .ngancach {
+    width: 95%;
+    height: 1px;
+    background-color: rgb(182, 182, 182);
+}
+
+
+.footer {
+    height: 100px;
+    background-color: aqua;
+    position: relative;
+    font-weight: bold;
+}
+
+.footer .img img {
+    height: 80px;
+    position: absolute;
+    top: 10px;
+}
+
+.footer .contact {
+    position: absolute;
+    left: 300px;
+    top: 20px
+}
+
+.footer .diachi {
+    position: absolute;
+    left: 600px;
+    top: 20px
+}
+
+.footer .qr img {
+    position: absolute;
+    height: 80px;
+    top: 9px;
+    left: 1000px
+}

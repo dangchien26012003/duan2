@@ -1,0 +1,449 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #464646;
+    text-align: left;
+    background-color: #f2f2f2;
+}
+.wapper{
+    padding-top: 70px;
+    width: 1519.2px;
+    height: 757px ;
+}
+/*container-header*/
+.container-header{
+    width: 1519.2px;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: aqua;
+}
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    display: flex;
+}
+
+.container-header .header-content{
+    position: relative;
+    margin: 0;
+    min-height: 42px;
+    height: 100%;
+}
+.align-item-center{
+    align-items: center !important;
+}
+.justifi-content-between{
+    justify-content: space-between !important;
+}
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.container-header .logo-now{
+    position: static;
+    right: 100%;
+    cursor: pointer;
+    margin-right: 8%;
+    padding-left: 0;
+    margin-top: 5px
+}
+.col-auto{
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+}
+.header-logo{
+    width: 110px;
+    height: 70px;
+}
+
+/* địa điểm*/
+.container-header .select-local{
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    position: relative;
+    padding: 0;
+}
+.dropdown{
+    position: relative;
+}
+.container-header .select-local .dropdown-toggle{
+    color: #252525;
+    border: 0;
+    padding: 10px 19px 10px 19px;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    width: 99.75px;
+    height: 41px;
+}
+/*địa điểm*/
+/*Phân loại*/
+.main-nav{
+    margin-left: 48px;
+    margin-right: 115px;
+    white-space: nowrap;
+   
+}
+.col{
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.main-nav .nav-item{
+    color: #252525;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 10px 12px 21px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-bottom: 4px solid transparent;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    background-color: transparent;
+}
+.nav-item:hover{
+    
+    color: red;
+}
+/*Phân loại*/
+/*search*/
+.header-icon-search{
+    position: relative;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.container-header .ti-search{
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+.giohang {
+    position: relative
+}
+
+.giohang .soluonggiohang {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: white;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+}
+
+.giohang .soluonggiohang span {
+    text-align: center;
+    display: block;
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 600
+}
+/*search*/
+/*đăng nhập*/
+.user-acc{
+    padding-left: 15px;
+}
+.container-header .btn-login{
+    padding: 7px 12px;
+    background-color: #fff;
+    border-color: red;
+    color: red;
+}
+.btn-none-bg{
+    transition:  1s ease;
+}
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*đăng nhập*/
+/*container-header*/
+/*Phần body container*/
+.container-body{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    
+}
+
+
+.now-search-filter{
+    padding-top: 15px;
+    width: 1200px;
+    height: 74.5px;
+}
+.now-search-filter .nav-filter{
+    border-bottom: 1px solid #7d7d7d;
+    position: relative;
+    padding-bottom: 8px;
+    width: 1200px;
+    height: 49.5px;
+}
+.clearfix{
+    display: block;
+    clear: both;
+    content: "";
+}
+.now-search-filter .list-filter{
+    float: left;
+    padding-top: 10px;
+    width: 189.21px;
+    height: 40.5px;
+}
+.now-search-filter .list-filter .item-filter{
+    color: #6d6f71;
+    font-size: 13px;
+    text-transform: uppercase;
+    float: left;
+    position: static;
+    width: 88.75px;
+    height: 30.5px;
+}
+.now-search-filter .list-filter .dropdown-toggle{
+    position: relative;
+    cursor: pointer;
+    padding: 3px 9px 8px;
+    display: inline-block;
+    border-radius: 6px 6px 0 0;
+    
+}
+
+.float-right{
+    float: right;
+}
+.now-search-filter .result{
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+}
+.now-search-filter .filter-sort{
+    display: block;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #7d7d7d;
+    color: #252525;
+    font-size: .8rem;
+    font-weight: 300;
+    height: 40px;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+    padding: 5px 5px 5px 7px;
+    position: relative;
+    text-indent: 0;
+}
+
+.now-search-filter .tag-filte{
+    display: flex;
+    padding-top: 10px;
+}
+
+/*now-restaurant*/
+.now-list-restaurant{
+    border-radius: 6px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.now-list-restaurant .list-restaurant{
+    margin: 0 -10px;
+    position: relative;
+}
+.now-list-restaurant .item-restaurant{
+    width: 20%;
+    padding: 10px;
+    float: left;
+}
+.now-list-restaurant .item-content{
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #fff;
+    position: relative;
+    display: block;
+}
+.now-list-restaurant .img-restaurant{
+    position: relative;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+    height: 137px;
+    background: #eaeaea;
+}
+.now-list-restaurant .img-restaurant img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* transform: translate(-50%;-50%); */
+}
+
+.now-list-restaurant .info-restaurant{
+    border: 1px solid #d7d7d7;
+    border-radius:  0 0 6px 6px;
+}
+.now-list-restaurant .info-basic-res{
+    padding: 5px 8px;
+    border-bottom: 1px solid #ebebeb;
+}
+.now-list-restaurant .info-restaurant .name-res{
+    font-size: 17px;
+    font-weight: 700;
+    color: #252525;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom:1px ;
+    padding-top: 5px;
+}
+.now-list-restaurant .info-restaurant .address-res{
+    font-size: 14px;
+    color: #959595;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.now-list-restaurant .kind-restaurant{
+    font-size: 14px;
+    color: #959595;
+    text-transform: uppercase;
+    padding: 8px 0px 6px;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*now-restaurant*/
+/*Phần body container*/
+/*footer*/
+.main-footer{
+    clear: both;
+    height: 397px;
+    background-color: #eee9e9;
+}
+.container-footer{
+width: 1200px;
+margin-left: 157px;
+margin-right: 157px;
+height: 100%;
+
+}
+.main-footer .container-inner{
+    height: 397px;
+    padding-top: 32px;
+    padding-bottom: 25px;
+    font-size: 17px;
+    overflow: hidden;
+    clear: both;
+}
+   /*blockfooter*/
+.main-footer .block-footer{
+    width: 241px;
+    height: 340px;
+    float: left;
+    color: #959595;
+}
+.main-footer .title-block{
+    font-weight: 7000;
+    color: #252525;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.menu-footer{
+    line-height: 25px;
+    margin-top: 0;
+    padding-left: 0;
+    list-style: none;
+}
+ul{
+    margin-bottom: 1rem;
+}
+li{
+    display: list-item;
+}
+.main-footer .mennu-item{
+    cursor: pointer;
+    color: #959595;
+}
+.main-footer .mennu-item a{
+    color: #08f;
+}
+.main-footer .title-block{
+    font-weight: 700;
+    color: #252525;
+}
+a{
+    text-decoration: none;
+    background-color: transparent;
+}
+.app{
+    width: 112px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.download-appstore{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+.download-chplay{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+.main-footer .logo-footer{
+    margin-top: 14px;
+    margin-bottom: 17px;
+}
+.img-footer-logo{
+    width: 200px;
+    height: 150px;
+    cursor: pointer;
+}
+.font12{
+    width: 241px;
+    height: 18px;
+    font-size: 75rem;
+    color: #08f;
+}
+
+.main-footer .blocl-last{
+   width: 447.56px;
+   height: 309.48px;
+   text-align: right;
+   float: right;
+   font-size: 16px; 
+}
+   /*blockfooter*/
+
+/*footer*/

@@ -1,0 +1,357 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+.header {
+    width: 100%;
+    height: 7%;
+    background-color: aqua;
+    position: relative;
+    position: fixed;
+    z-index: 1;
+}
+
+.header img {
+    height: 8vh;
+    position: absolute;
+    top: -0.3vh;
+}
+
+.timkiem {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .search {
+    display: flex;
+    border-radius: 50px;
+}
+
+.header .search #input-search {
+    background: none;
+    height: 30px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    padding-left: 0;
+    width: 0px;
+    transition: 0.25s ease-in-out;
+    font-size: 13px;
+    margin: 0;
+}
+
+.header .search .icon{
+    width: 30px;
+    background: none;
+    border-radius: 50%;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.header .search:hover #input-search, .header .open #input-search, .header .search #input-search:valid{
+    background-color: white;
+    width: 160px;
+    padding-left: 10px;
+}
+
+.header a {
+    display: block;
+}
+
+.header img.giohang{
+    left: 95%;
+    top: 0.5vh;
+    height: 6vh;
+    position: relative;
+}
+
+.header .soluongdon {
+    height: 2vh;
+    width: 2vh;
+    background-color: #fff;
+    left: 97.5%;
+    top: 0vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vh;
+    font-size: 2vh;
+}
+
+.header h1{
+    /* display: inline-block; */
+    text-align: center;
+    line-height: 50px;
+    color: black;
+    position: absolute;
+    left: calc(50% - 100px)
+}
+
+.container-banner {
+    padding-top:50px;
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+    width: 1000px;
+    height: 300px;
+    background-color: rgb(230, 230, 230);
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    transition: all 1s;
+    width: 10000px
+}
+
+.container-banner .banner .slide img {
+    float: left;
+    width: 1000px
+}
+
+.container-banner .banner button {
+    position: absolute;
+    z-index: 1;
+    right: -5px;
+    top: 50%;
+    border: none;
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
+    background-color: rgba(230, 230, 230, 0);
+
+}
+
+.container-banner .banner button img{
+    height: 30px;
+    display: none;
+    opacity: 50%
+}
+
+.container-banner .banner:hover button img{
+    display: block;
+}
+
+.container-item .danhmuc{
+    display: flex;
+    justify-content: center;
+}
+
+.container-item .danhmuc .listItem {
+    /* border: 1px solid black; */
+    height: 100px;
+    width: 130px;
+    margin:10px
+}
+
+.container-item .danhmuc .listItem:hover {
+    background-color:rgba(244, 243, 243);
+}
+.container-item .danhmuc .listItem .img {
+    margin: 10px;
+    display: flex;
+    justify-content: center
+}
+
+.container-item .danhmuc .listItem .img img {
+    height: 50px;
+}
+
+.container-item .danhmuc .listItem .text {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.container-item .danhmuc .listItem .text a{
+    text-decoration: none;
+    color: black;
+}
+
+.containerDanhmuc {
+    display: flex;
+    justify-content: center;
+    position:relative;
+    background-color: #dcdcdc;
+    padding-top: 10px;
+}
+
+.containerDanhmuc .phanloai {
+    width: 1000px;
+    position: absolute;
+    line-height: 40px;
+    color: rgba(0,0,0,0.54);
+    background-color: white;
+    margin-left: 5px
+}
+
+.containerDanhmuc .phanloaisp {
+    width: 1200px;
+    /* border: 1px solid; */
+    height: 150px;
+    display: flex;
+    padding-top: 40px;
+    background-color: white
+}
+
+.containerDanhmuc .phanloaisp .cot {
+    width: 240px;
+    border: 1px solid rgba(0,0,0,.05);
+    border-right: 0;
+}
+
+.containerDanhmuc .phanloaisp .cot:last-child {
+    border-right: 0px solid
+}
+
+.containerDanhmuc .phanloaisp .cot .hang {
+    height: 75px;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    display: flex;
+    align-items: center
+}
+
+.containerDanhmuc .phanloaisp .cot .hang:hover {
+    background-color:rgb(244, 243, 243);
+    
+}
+
+.containerDanhmuc .phanloaisp .cot .hang:last-child {
+    border-bottom: 0;
+    border-bottom: 0px solid
+}
+
+.containerDanhmuc .phanloaisp .cot .hang img {
+    height: 70px;
+    padding: 0 10px
+}
+
+.containerDanhmuc .phanloaisp .cot .hang h4 {
+    line-height: 75px;
+    text-align: left;
+
+}
+
+
+.container-sp {
+    height: 100%;
+    background-color: #dcdcdc;
+    padding: 50px 0;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+
+
+.container-sp .tieude h3{
+    width: 1188px;
+    background-color: white;
+    position: absolute;
+    color: rgb(238, 77, 45);
+    line-height: 40px;
+    padding-left: 10px;
+    /* margin-bottom: 10px; */
+
+}
+
+.container-sp .cot{
+    height: 220px;
+    width: 230px;
+    border-right: 12px solid #dcdcdc;
+    margin-top: 10px;
+    background-color: white;
+    
+    
+}
+
+.container-sp .hang a:first-child {
+    display: block;
+    margin-top: 50px;
+}
+.container-sp .cot .sp {
+    overflow: hidden;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    /* border-bottom: 1px solid; */
+}
+
+.container-sp .cot:hover>.sp{
+    border-bottom: 2px solid red   
+}
+
+.container-sp .cot .sp img {
+    height: 150px;
+    margin-top: -10px;
+}
+
+.container-sp .cot .tensp {
+    padding-left: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.container-sp .cot .gia {
+    padding-left: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: red;
+}
+.container-sp .cot .khuyenmai {
+    padding-left: 185px;
+    margin-top: -30px;
+    font-weight: bold;
+    color: red;
+}
+
+.container-sp .cot .khuyenmai img{
+    height: 40px
+}
+
+
+.footer {
+    height: 100px;
+    background-color: aqua;
+    position: relative;
+    font-weight: bold;
+}
+
+.footer .img img {
+    height: 80px;
+    position: absolute;
+    top: 10px;
+}
+
+.footer .contact {
+    position: absolute;
+    left: 300px;
+    top: 20px
+}
+
+.footer .diachi {
+    position: absolute;
+    left: 600px;
+    top: 20px
+}
+
+.footer .qr img {
+    position: absolute;
+    height: 80px;
+    left: 1100px;
+    top: 8px
+}

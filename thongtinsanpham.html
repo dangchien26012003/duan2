@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thông tin sản phẩm</title>
+  <link rel="stylesheet" href="thongtinsanpham.css">
+  <link rel="stylesheet" href="./themify-icons.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <div class="wrapper">
+      <div class="container-header">
+        <div class="container">
+          <div class="header-content navbar row justifi-content-between align-item-center">
+
+            <div class="logo-now col-auto">
+              <span>
+                <a href="trangchu.html"><img src="./logo.png" alt="logo"></a>
+              </span>
+            </div>
+            <div class="select-local col-auto">
+              <div class="dropdown">
+                <div class="dropdown-toggle" role="button" id="local-dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  <Select>
+                    <option>Hà Nội</option>
+                    <option>HCM</option>
+                    <option>Đa Nẵng</option>
+                    <option>Hải Phòng</option>
+                    <option>Huế</option>
+                  </Select>
+                </div>
+              </div>
+            </div>
+            <div class="infomation-product">
+              <h2>THÔNG TIN SẢN PHẨM</h2>
+            </div>
+            <div class="header-icon-search col-auto">
+              <div class="wapper-search">
+                <div class="search" id="search-box">
+                    <input type="text" name="" id="input-search" placeholder="Nhập từ khoá cần tìm" oninput="addclass()" required>
+                    <button class="icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+              <!-- <img src="./i-consearch.png" class="img-search"> -->
+              <div class="user-acc col-auto">
+                <a href="index.html">
+                  <button type="button" class="btn btn-none-bg btn-login">
+                    Đăng nhập
+                  </button>
+                </a>
+              </div>
+            </div>
+            <a href="thanhtoan.html" class="giohang-a">
+              <div class="giohang">
+                <img src="./giohang-removebg-preview.png" alt="">
+                <div class="soluonggiohang">
+                  <span id="soluongbandau">2</span>
+                  <div class="themsoluong">
+                    <span class="soluong ">+1</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="now-detail-restaurant clearfix">
+        <div class="container">
+          <div class="detail-restaurant-img">
+            <img src="./chicken.jpg" class="chicken">
+          </div>
+          <div class="detail-restaurant-info">
+            <div class="kind-restaurant">
+              <span>
+                Quán nhậu
+              </span>
+              <span>
+                -
+                <a href="#" class="chi-nhanh">
+                  Chi nhánh
+                </a>
+              </span>
+            </div>
+            <h1 class="name-food">
+              Đùi gà Đông Tảo chiên
+            </h1>
+            <div class="adress-restaurant">
+              790 Đường Láng, Đông Đa, Hà Nội
+            </div>
+            <div class="rating">
+              <i class="ti-star"></i>
+              <i class="ti-star"></i>
+              <i class="ti-star"></i>
+              <i class="ti-star"></i>
+              <i class="ti-star"></i>
+              <p></p>Đánh giá trên TACODISH</p>
+            </div>
+            <div class="ingredient">
+              <p>
+                Nguồn gốc:<br>là giống gà đặc sản và quý hiếm của Việt Nam nước ta.
+                Đây là giống gà nuôi có nguồn gốc từ xã Đông Tảo, huyện Khoái Châu, tỉnh Hưng Yên.
+                <br>Đùi gà rất ngon, chất thịt mềm, không dai, không có gân được nhiều người ưa chuộng
+              </p>
+            </div>
+            <div class="cost-restaurant">
+              <i class="ti-money"></i>
+              30.000đ
+              <span class="giacu"> 50.000đ</span>
+            </div>
+            <div class=" link-giohang">
+              <div class="item themgiohang">
+                <span>Thêm vào giỏ hàng</span>
+
+              </div>
+              <a href="thanhtoan.html" class="item">
+                <div class="muangay">
+                  <span>Mua ngay</span>
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="container relative clearfix">
+        <div class="now-menu-restaurant">
+
+          <div class="menu-restaurant-tab">
+            <div class="item active">
+              Thực đơn
+            </div>
+          </div>
+
+          <div class="menu-restaurant-content-tab">
+            <div class="menu-restaurant-container">
+              <div class="menu-restaurant-category">
+                <div class="list-category" id="scroll-spy">
+                  <div class="scrollbar-container ps">
+
+                    <div class="item">
+                      <span id="1321082" title="LẨU & MÓN ĂN THEO KG (NƯỚC LẨU GỌI RIÊNG)" class="item-link active">
+                        LẨU & MÓN ĂN THEO KG (NƯỚC LẨU GỌI RIÊNG)
+                      </span>
+                    </div>
+
+                    <div class="item">
+                      <span id="1321008" title="CÁC MÓN LẨU NHÚNG" class="item-link">
+                        CÁC MÓN LẨU NHÚNG
+                      </span>
+                    </div>
+
+                    <div class="item">
+                      <span id="1320992" title="MÓN KHAI VỊ" class="item-link">
+                        MÓN KHAI VỊ
+                      </span>
+                    </div>
+
+                    <div class="item">
+                      <span id="1320997" title="CÁC MÓN BÒ, BÊ, GÀ, LỢN, TRÂU" class="item-link">
+                        CÁC MÓN BÒ, BÊ, GÀ, LỢN, TRÂU
+                      </span>
+                    </div>
+
+                    <div class="item">
+                      <span id="1321003" title="CÁC MÓN CÁ, MỰC, ẾCH, TÔM, CHIM" class="item-link">
+                        CÁC MÓN CÁ, MỰC, ẾCH, TÔM, CHIM
+                      </span>
+                    </div>
+                    <div class="item">
+                      <span id="1321080" title="ĐỒ THÊM NHỨNG LẨU" class="item-link">
+                        ĐỒ THÊM NHỨNG LẨU
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-restaurant-detail">
+                <div class="menu-restaurant-list">
+                  <div class="search-item">
+                    <p class="input-group">
+                      <i class="fa-solid fa-magnifying-glass" style="font-size: 20px"> </i>
+                      <input type="search" name="searchkey" placeholder="Tìm món" value>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="QRcode" id="QRcode">
+          <img src="./QRcode.jpg" style="height:200px ; width: 200px;" id="img-qr">
+          <div>
+            Quyét mã để đặt món
+            <br>
+            Trên app TACODISH
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="container-inner">
+          <div class="block-footer">
+            <p class="title-block"> Công ty</p>
+            <ul class="menu-footer">
+              <li class="mennu-item">
+                <a href="#">
+                  Giới thiệu
+                </a>
+              </li>
+              <li class="mennu-item">
+                <a href="#">
+                  Trung tâm trợ giúp
+                </a>
+              </li>
+              <li class="mennu-item">
+                <a href="#">
+                  Quy chế
+                </a>
+              </li>
+              <li class="mennu-item">
+                <a href="#">
+                  Điều khoản sử dụng
+                </a>
+              </li>
+              <li class="mennu-item">
+                <a href="#">
+                  Bảo mật thông tin
+                </a>
+              </li>
+              <li class="mennu-item">
+                <a href="#">
+                  Giải quyết khiếu nại
+                </a>
+              </li>
+              <li class="mennu-item">
+                <a href="#">
+                  Liên hệ
+                </a>
+              </li>
+              <li class="mennu-item">
+                <a href="#">
+                  Hợp tác nhân viên giao nhận
+                </a>
+              </li>
+              <li class="mennu-item">
+                <a href="#">
+                  TACODISH Uni
+                </a>
+              </li>
+              <li class="mennu-item">
+                <a href="#">
+                  TACODISH Blog
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="block-footer">
+            <p class="title-block"> Ứng dụng TACODISH</p>
+            <a class="app">
+              <img src="./download-removebg.png" class="download-appstore">
+            </a>
+            <a class="app">
+              <img src="./down-loadchplay.png" class="download-chplay">
+            </a>
+          </div>
+
+          <div class="block-footer text-center">
+            <div class="logo-footer">
+              <a class="link">
+                <img src="./logo.png" class="img-footer-logo">
+              </a>
+            </div>
+          </div>
+          <div class="blocl-last">
+            <p class="title-block"> Địa chỉ công ty</p>
+            <span>
+              <p>Công ty cổ phần Foody</p>
+              <p>Lầu G, tòa Jabes 1,</p>
+              <p>Số 244, đường Cống Quỳnh, phường Phạm Ngũ Lão, Quận 1, TPHCM</p>
+              <p>Giấy CN DKND số: 0365358746</p>
+              <p>do Sở Kế hoạc Đầu tư TP.HCM cấp ngày 11/06/2012,</p>
+              <p>sửa đổi lần thứ 23, ngày 10/12/2020</p>
+              <p>Số điện thoại : 19002041</p>
+            </span>
+          </div>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    var soluong = $("#soluongbandau").text()
+    $(".themgiohang").click(function () {
+      soluong++
+      $(".soluong").addClass("active")
+      setTimeout(function () {
+        $(".soluong").addClass("remove")
+        $("#soluongbandau").text(soluong)
+        setTimeout(function () {
+          $(".soluong").removeClass("active")
+          $(".soluong").removeClass("remove")
+        }, 750)
+      }, 750)
+    })
+  </script>
+</body>
+
+</html>

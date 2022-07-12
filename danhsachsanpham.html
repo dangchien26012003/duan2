@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Danh sách sản phẩm</title>
+   <link rel="stylesheet" href="danhsachsanpham.css">
+   <link rel="stylesheet" href="./themify-icons.css">
+</head>
+
+<body>
+   <div class="app">
+      <div class="wapper">
+         <div class="main-header">
+            <div class="container-header">
+               <div class="container">
+                  <div class="header-content navbar row justifi-content-between align-item-center">
+                     <div class="logo-now col-auto">
+                        <span>
+                           <a href="trangchu.html"><img src="./logo.png" alt="logo" class="header-logo"></a>
+                        </span>
+                     </div>
+                     <div class="select-local col-auto">
+                        <div class="dropdown">
+                           <div class="dropdown-toggle" role="button" id="local-dropdown" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              Hà Nội
+                              <i class="ti-arrow-circle-down"></i>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="main-nav col">
+                        <a class="nav-item" href="#">Đồ ăn</a>
+                        <a class="nav-item" href="#">Thực phẩm</a>
+                        <a class="nav-item" href="#">Nước ép</a>
+                        <a class="nav-item" href="#">Thực phẩm sống</a>
+                        <a class="nav-item" href="#">sale food</a>
+                        <a class="nav-item" href="#">Ăn liền</a>
+                        <a class="nav-item" href="#">Đóng hộp</a>
+                     </div>
+                     <div class="header-icon-search col-auto">
+                        <span class=" ti-search"></span>
+                     </div>
+                     <a href="thanhtoan.html">
+                        <div class="giohang">
+                           <img src="./giohang-removebg-preview.png" alt="" style="max-width: 50px">
+                           <div class="soluonggiohang">
+                              <span>2</span>
+                           </div>
+                        </div>
+                     </a>
+                     
+                     
+                     <!-- <div class="user-acc col-auto">
+                        <button type="button" class="btn btn-none-bg btn-login">
+                           Đăng nhập
+                        </button>
+                     </div> -->
+
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container-body">
+            <div class="now-search-filter">
+               <div class="nav-filter clearfix">
+                  <div class="list-filter">
+                     <div class="item-filter">
+                        <span class="dropdown-toggle">Khu vực</span>
+                     </div>
+                     <div class="item-filter">
+                        <span class="dropdown-toggle">Sản phẩm</span>
+                     </div>
+                  </div>
+                  <div class="float-right">
+                     <div class="result">
+                        200 kết quả
+                     </div>
+                     <select class="filter-sort">
+                        <option>Đúng nhất</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="tag-filter">
+
+               </div>
+            </div>
+            <div class="now-list-restaurant">
+               <div class="list-restaurant">
+                  <div class="item-restaurant">
+                     <a target="_blank" class="item-content"
+                        href="thongtinsanpham.html">
+
+                        <div class="img-restaurant">
+                           <img src=".//banhmi.jpg">
+                        </div>
+
+                        <div class="info-restaurant">
+                           <div class="info-basic-res">
+                              <h4 class="name-res" title="bánh mì">
+                                 <i class="ti-medall-alt"></i>
+                                 Bánh mì Pate
+                              </h4>
+                              <div class="address-res">Lô D001, Chung Cư A4, Phan XÍch Long</div>
+                              <p class="kind-restaurant">Ăn vặt/Vỉa hè</p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="item-restaurant">
+                     <a target="_blank" class="item-content" href="thongtinsanpham.html">
+
+                        <div class="img-restaurant">
+                           <img src=".//chicken.jpg">
+                        </div>
+
+                        <div class="info-restaurant">
+                           <div class="info-basic-res">
+                              <h4 class="name-res" title="Đùi gà chiên">
+                                 <i class="ti-medall-alt"></i>
+                                 Đùi gà chiên
+                              </h4>
+                              <div class="address-res">Lô D001, Chung Cư A4, Phan XÍch Long</div>
+                              <p class="kind-restaurant">Quán ăn</p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="item-restaurant">
+                     <a target="_blank" class="item-content" href="thongtinsanpham.html">
+
+                        <div class="img-restaurant">
+                           <img src=".//chips.jpg">
+                        </div>
+
+                        <div class="info-restaurant">
+                           <div class="info-basic-res">
+                              <h4 class="name-res" title="Khoai tây chiên">
+                                 <i class="ti-medall-alt"></i>
+                                 Khoai tây chiên
+                              </h4>
+                              <div class="address-res">Lô D001, Chung Cư A4, Phan XÍch Long</div>
+                              <p class="kind-restaurant">Quán ăn</p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="item-restaurant">
+                     <a target="_blank" class="item-content" href="thongtinsanpham.html">
+
+                        <div class="img-restaurant">
+                           <img src=".//noodle.jpg">
+                        </div>
+
+                        <div class="info-restaurant">
+                           <div class="info-basic-res">
+                              <h4 class="name-res" title="Mì">
+                                 <i class="ti-medall-alt"></i>
+                                 Mì Tôm
+                              </h4>
+                              <div class="address-res">Lô D001, Chung Cư A4, Phan XÍch Long</div>
+                              <p class="kind-restaurant">Quán ăn</p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="item-restaurant">
+                     <a target="_blank" class="item-content" href="thongtinsanpham.html">
+
+                        <div class="img-restaurant">
+                           <img src=".//pizza.jpg">
+                        </div>
+
+                        <div class="info-restaurant">
+                           <div class="info-basic-res">
+                              <h4 class="name-res" title="Pizza">
+                                 <i class="ti-medall-alt"></i>
+                                 Pizza
+                              </h4>
+                              <div class="address-res">Lô D001, Chung Cư A4, Phan XÍch Long</div>
+                              <p class="kind-restaurant">Quán ăn</p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="item-restaurant">
+                     <a target="_blank" class="item-content" href="thongtinsanpham.html">
+
+                        <div class="img-restaurant">
+                           <img src=".//hotdog.jpg">
+                        </div>
+
+                        <div class="info-restaurant">
+                           <div class="info-basic-res">
+                              <h4 class="name-res" title="Hotdog">
+                                 <i class="ti-medall-alt"></i>
+                                 Xúc Xích CP
+                              </h4>
+                              <div class="address-res">Lô D001, Chung Cư A4, Phan XÍch Long</div>
+                              <p class="kind-restaurant">Quán ăn</p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="item-restaurant">
+                     <a target="_blank" class="item-content" href="thongtinsanpham.html">
+
+                        <div class="img-restaurant">
+                           <img src=".//milk-tea.jpg">
+                        </div>
+
+                        <div class="info-restaurant">
+                           <div class="info-basic-res">
+                              <h4 class="name-res" title="Đùi gà chiên">
+                                 <i class="ti-medall-alt"></i>
+                                 Trà Sữa
+                              </h4>
+                              <div class="address-res">Lô D001, Chung Cư A4, Phan XÍch Long</div>
+                              <p class="kind-restaurant">Quán ăn</p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+
+
+                  <div class="item-restaurant">
+                     <a target="_blank" class="item-content" href="thongtinsanpham.html">
+
+                        <div class="img-restaurant">
+                           <img src=".//Ga-Xien-Que-Loai-1-1.jpg">
+                        </div>
+
+                        <div class="info-restaurant">
+                           <div class="info-basic-res">
+                              <h4 class="name-res" title="Gà xiên que">
+                                 <i class="ti-medall-alt"></i>
+                                 Gà xiên que
+                              </h4>
+                              <div class="address-res">Lô D001, Chung Cư A4, Phan XÍch Long</div>
+                              <p class="kind-restaurant">Quán ăn</p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+
+
+                  <div class="item-restaurant">
+                     <a target="_blank" class="item-content" href="thongtinsanpham.html">
+
+                        <div class="img-restaurant">
+                           <img src=".//kim-bap.jpg">
+                        </div>
+
+                        <div class="info-restaurant">
+                           <div class="info-basic-res">
+                              <h4 class="name-res" title="Cơm kim bắp">
+                                 <i class="ti-medall-alt"></i>
+                                 Kimbap
+                              </h4>
+                              <div class="address-res">Lô D001, Chung Cư A4, Phan XÍch Long</div>
+                              <p class="kind-restaurant">Quán ăn</p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+
+
+                  <div class="item-restaurant">
+                     <a target="_blank" class="item-content" href="thongtinsanpham.html">
+
+                        <div class="img-restaurant">
+                           <img src=".//banh-trang-tron.jpg">
+                        </div>
+
+                        <div class="info-restaurant">
+                           <div class="info-basic-res">
+                              <h4 class="name-res" title="Bánh tráng trộn">
+                                 <i class="ti-medall-alt"></i>
+                                 Bánh tráng trộn
+                              </h4>
+                              <div class="address-res">Lô D001, Chung Cư A4, Phan XÍch Long</div>
+                              <p class="kind-restaurant">Quán ăn</p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="item-restaurant">
+                  <a target="_blank" class="item-content"
+                     href="https://shopeefood.vn/ho-chi-minh/banh-trang-cham-chung-cu-phan-xich-long">
+
+                     <div class="img-restaurant">
+                        <img src=".//banhmi.jpg">
+                     </div>
+
+                     <div class="info-restaurant">
+                        <div class="info-basic-res">
+                           <h4 class="name-res" title="bánh mì">
+                              <i class="ti-medall-alt"></i>
+                              Bánh mì Pate
+                           </h4>
+                           <div class="address-res">Lô D001, Chung Cư A4, Phan XÍch Long</div>
+                           <p class="kind-restaurant">Ăn vặt/Vỉa hè</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="item-restaurant">
+                  <a target="_blank" class="item-content" href="thongtinsanpham.html">
+
+                     <div class="img-restaurant">
+                        <img src=".//chicken.jpg">
+                     </div>
+
+                     <div class="info-restaurant">
+                        <div class="info-basic-res">
+                           <h4 class="name-res" title="Đùi gà chiên">
+                              <i class="ti-medall-alt"></i>
+                              Đùi gà chiên
+                           </h4>
+                           <div class="address-res">Lô D001, Chung Cư A4, Phan XÍch Long</div>
+                           <p class="kind-restaurant">Quán ăn</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="item-restaurant">
+                  <a target="_blank" class="item-content" href="thongtinsanpham.html">
+
+                     <div class="img-restaurant">
+                        <img src=".//chips.jpg">
+                     </div>
+
+                     <div class="info-restaurant">
+                        <div class="info-basic-res">
+                           <h4 class="name-res" title="Khoai tây chiên">
+                              <i class="ti-medall-alt"></i>
+                              Khoai tây chiên
+                           </h4>
+                           <div class="address-res">Lô D001, Chung Cư A4, Phan XÍch Long</div>
+                           <p class="kind-restaurant">Quán ăn</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="item-restaurant">
+                  <a target="_blank" class="item-content" href="thongtinsanpham.html">
+
+                     <div class="img-restaurant">
+                        <img src=".//noodle.jpg">
+                     </div>
+
+                     <div class="info-restaurant">
+                        <div class="info-basic-res">
+                           <h4 class="name-res" title="Mì">
+                              <i class="ti-medall-alt"></i>
+                              Mì Tôm
+                           </h4>
+                           <div class="address-res">Lô D001, Chung Cư A4, Phan XÍch Long</div>
+                           <p class="kind-restaurant">Quán ăn</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="item-restaurant">
+                  <a target="_blank" class="item-content" href="thongtinsanpham.html">
+
+                     <div class="img-restaurant">
+                        <img src=".//pizza.jpg">
+                     </div>
+
+                     <div class="info-restaurant">
+                        <div class="info-basic-res">
+                           <h4 class="name-res" title="Pizza">
+                              <i class="ti-medall-alt"></i>
+                              Pizza
+                           </h4>
+                           <div class="address-res">Lô D001, Chung Cư A4, Phan XÍch Long</div>
+                           <p class="kind-restaurant">Quán ăn</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="item-restaurant">
+                  <a target="_blank" class="item-content" href="thongtinsanpham.html">
+
+                     <div class="img-restaurant">
+                        <img src=".//hotdog.jpg">
+                     </div>
+
+                     <div class="info-restaurant">
+                        <div class="info-basic-res">
+                           <h4 class="name-res" title="Hotdog">
+                              <i class="ti-medall-alt"></i>
+                              Xúc Xích CP
+                           </h4>
+                           <div class="address-res">Lô D001, Chung Cư A4, Phan XÍch Long</div>
+                           <p class="kind-restaurant">Quán ăn</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="item-restaurant">
+                  <a target="_blank" class="item-content" href="thongtinsanpham.html">
+
+                     <div class="img-restaurant">
+                        <img src=".//milk-tea.jpg">
+                     </div>
+
+                     <div class="info-restaurant">
+                        <div class="info-basic-res">
+                           <h4 class="name-res" title="Đùi gà chiên">
+                              <i class="ti-medall-alt"></i>
+                              Trà Sữa
+                           </h4>
+                           <div class="address-res">Lô D001, Chung Cư A4, Phan XÍch Long</div>
+                           <p class="kind-restaurant">Quán ăn</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+
+
+               <div class="item-restaurant">
+                  <a target="_blank" class="item-content" href="thongtinsanpham.html">
+
+                     <div class="img-restaurant">
+                        <img src=".//Ga-Xien-Que-Loai-1-1.jpg">
+                     </div>
+
+                     <div class="info-restaurant">
+                        <div class="info-basic-res">
+                           <h4 class="name-res" title="Gà xiên que">
+                              <i class="ti-medall-alt"></i>
+                              Gà xiên que
+                           </h4>
+                           <div class="address-res">Lô D001, Chung Cư A4, Phan XÍch Long</div>
+                           <p class="kind-restaurant">Quán ăn</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+
+
+               <div class="item-restaurant">
+                  <a target="_blank" class="item-content" href="thongtinsanpham.html">
+
+                     <div class="img-restaurant">
+                        <img src=".//kim-bap.jpg">
+                     </div>
+
+                     <div class="info-restaurant">
+                        <div class="info-basic-res">
+                           <h4 class="name-res" title="Cơm kim bắp">
+                              <i class="ti-medall-alt"></i>
+                              Kimbap
+                           </h4>
+                           <div class="address-res">Lô D001, Chung Cư A4, Phan XÍch Long</div>
+                           <p class="kind-restaurant">Quán ăn</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+
+
+               <div class="item-restaurant">
+                  <a target="_blank" class="item-content" href="thongtinsanpham.html">
+
+                     <div class="img-restaurant">
+                        <img src=".//banh-trang-tron.jpg">
+                     </div>
+
+                     <div class="info-restaurant">
+                        <div class="info-basic-res">
+                           <h4 class="name-res" title="Bánh tráng trộn">
+                              <i class="ti-medall-alt"></i>
+                              Bánh tráng trộn
+                           </h4>
+                           <div class="address-res">Lô D001, Chung Cư A4, Phan XÍch Long</div>
+                           <p class="kind-restaurant">Quán ăn</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <footer class="main-footer">
+      <div class="container-footer">
+         <div class="container-inner">
+            <div class="block-footer">
+               <p class="title-block"> Công ty</p>
+               <ul class="menu-footer">
+                  <li class="mennu-item">
+                     <a href="#">
+                        Giới thiệu
+                     </a>
+                  </li>
+                  <li class="mennu-item">
+                     <a href="#">
+                        Trung tâm trợ giúp
+                     </a>
+                  </li>
+                  <li class="mennu-item">
+                     <a href="#">
+                        Quy chế
+                     </a>
+                  </li>
+                  <li class="mennu-item">
+                     <a href="#">
+                        Điều khoản sử dụng
+                     </a>
+                  </li>
+                  <li class="mennu-item">
+                     <a href="#">
+                        Bảo mật thông tin
+                     </a>
+                  </li>
+                  <li class="mennu-item">
+                     <a href="#">
+                        Giải quyết khiếu nại
+                     </a>
+                  </li>
+                  <li class="mennu-item">
+                     <a href="#">
+                        Liên hệ
+                     </a>
+                  </li>
+                  <li class="mennu-item">
+                     <a href="#">
+                        Hợp tác nhân viên giao nhận
+                     </a>
+                  </li>
+                  <li class="mennu-item">
+                     <a href="#">
+                        TACODISH Uni
+                     </a>
+                  </li>
+                  <li class="mennu-item">
+                     <a href="#">
+                        TACODISH Blog
+                     </a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="block-footer">
+               <p class="title-block"> Ứng dụng TACODISH</p>
+               <a class="app">
+                  <img src=".//download-removebg.png" class="download-appstore">
+               </a>
+               <a class="app">
+                  <img src=".//down-loadchplay.png" class="download-chplay">
+               </a>
+            </div>
+
+            <div class="block-footer text-center">
+               <div class="logo-footer">
+                  <a class="link">
+                     <img src=".//logo.png" class="img-footer-logo">
+                  </a>
+               </div>
+            </div>
+            <div class="blocl-last">
+               <p class="title-block"> Địa chỉ công ty</p>
+               <span>
+                  <p>Công ty cổ phần Foody</p>
+                  <p>Lầu G, tòa Jabes 1,</p>
+                  <p>Số 244, đường Cống Quỳnh, phường Phạm Ngũ Lão, Quận 1, TPHCM</p>
+                  <p>Giấy CN DKND số: 0365358746</p>
+                  <p>do Sở Kế hoạc Đầu tư TP.HCM cấp ngày 11/06/2012,</p>
+                  <p>sửa đổi lần thứ 23, ngày 10/12/2020</p>
+                  <p>Số điện thoại : 19002041</p>
+               </span>
+            </div>
+   </footer>
+   </div>
+</body>
+
+</html>
