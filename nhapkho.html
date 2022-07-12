@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập kho</title>
+    <link rel="stylesheet" href="nhapkho.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="./logo.png" alt="">
+        <h1>Nhập kho</h1>
+    </div>
+    <div class="container">
+        <div class="body-left">
+            <a href="quanlykho.html">
+                <div>
+                    <img src="./kho.png" alt="bán hàng">
+                    <h4>Kho</h4>
+                </div>
+            </a>
+            <a href="nhapkho.html">
+                <div style="background-color: rgba(72, 191, 227, 0.996);" class="active">
+                    <img src="./nhapkho.png" alt="Trang chủ" style="height: 35px;">
+                    <h4 style="color: white">Nhập kho</h4>
+                </div>
+            </a>
+            <a href="quanlydonhang.html">
+                <div>
+                    <img src="./taodon2.png" alt="Trang chủ">
+                    <h4>Đơn hàng</h4>
+                </div>
+            </a>
+
+        </div>
+        <div class="body-right">
+            <div class="right1">
+                <div class="right1-contain" style="background-color: rgb(248, 101, 101);">
+                    <div class="img">
+                        <img src="./tienbanhang.png" alt="">
+                    </div>
+                    <div class="text">
+                        <span>Giờ hiện tại</span>
+                        <br>
+                        <span id="ngay-thang-nam">0 / 0 / 0</span>
+                        <span>||</span>
+                        <span id="gio-phut-gia">0 : 0 : 0</span>
+                        <!-- <span style="font-weight: bold;" class="day">0</span>
+                        <span>/</span>
+                        <span style="font-weight: bold;" class="month">0</span>
+                        <span>/</span>
+                        <span style="font-weight: bold;" class="year">0</span>
+                        <span>||</span>
+                        <span style="font-weight: bold;" class="day">0</span>
+                        <span>:</span>
+                        <span style="font-weight: bold;">0</span>
+                        <span>:</span>
+                        <span style="font-weight: bold;">0</span> -->
+
+                        <!-- <input type="text" id="" readonly> -->
+                    </div>
+                    
+                </div>
+                
+                <div class="right1-contain" style="background-color: rgb(65, 190, 177);">
+                    <div class="img"><img src="./sua.png" alt=""></div>
+                    <div class="text">
+                        <span>Đã sửa trong ngày</span>
+                        <br>
+                        <input type="text" id="sua" readonly>
+                    </div>
+                </div>
+                <div class="right1-contain" style="background-color: rgb(98, 212, 57);">
+                    <div class="img"><img src="./xoa.png" alt=""></div>
+                    <div class="text">
+                        <span>Đã xoá trong ngày</span>
+                        <br>
+                        <input type="text" id="xoa" value = "0"readonly>
+                    </div>
+                </div>
+            </div>
+            <div class="right2">
+                <div>
+                    <div class="top">
+                        <span>Thông tin kho</span>
+                    </div>
+                    <div class="bottom">
+                        <div class="tongkho">
+                            <span>Tổng sản phẩm</span>
+                            <input type="text" name="" id="tongkho" readonly>
+                        </div>
+                        <div class="hethang">
+                            <span>Hết hàng</span>
+                            <input type="text" name="" id="hethang" readonly>
+                        </div>
+                        <div class="saphethang">
+                            <span>Sắp hết hàng</span>
+                            <input type="text" name="" id="saphethang" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>Thông tin sản phẩm</span>
+                    </div>
+                    <div class="bottom">
+                        <div class="notedate">
+                            <span>Chưa nhập date</span>
+                            <input type="text" name="" id="notdate" readonly>
+                        </div>
+                        <div class="notgiaban">
+                            <span>Chưa nhập giá bán</span>
+                            <input type="text" name="" id="notgiaban" readonly>
+                        </div>
+                        <div class="notgiamua">
+                            <span>Chưa nhập giá mua</span>
+                            <input type="text" name="" id="notgiamua" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right3">
+                <div class="table">
+                    <table border=1 cellspacing=0 id="render">
+                        <tr>
+                            <th>STT</th>
+                            <th>Mã SP</th>
+                            <th>Tên SP</th>
+                            <th>Số Lượng</th>
+                            <th>Giá Mua</th>
+                            <th>Giá Bán</th>
+                            <th>Date</th>
+                            <th>Ngày Nhập</th>
+                            <th>Nhà cung cấp</th>
+                            <th>Chỉnh Sửa</th>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="input">
+                    <h1>Thêm sản phẩm</h1>
+                    <table>
+                        <tr>
+                            <td>Mã sản phẩm: </td>
+                            <td><input type="number" id="ma" placeholder="Nhập mã sản phẩm:"></td>
+                        </tr>
+                        <tr>
+                            <td>Tên sản phẩm: </td>
+                            <td><input type="text" id="ten" placeholder="Nhập tên sản phẩm:"></td>
+                        </tr>
+                        <tr>
+                            <td>Số lượng: </td>
+                            <td><input type="number" id="soluong" placeholder="Nhập số lượng:" min="0"></td>
+                        </tr>
+                        <tr>
+                            <td>Giá mua: </td>
+                            <td><input type="number" id="giamua" placeholder="Nhập giá mua:" min="0"></td>
+                        </tr>
+                        <tr>
+                            <td>Giá bán: </td>
+                            <td><input type="number" id="giaban" placeholder="Nhập giá bán:" min="0"></td>
+                        </tr>
+                        <tr>
+                            <td>Date: </td>
+                            <td><input type="date" id="date" class="date1"></td>
+                        </tr>
+                        <tr>
+                            <td>Ngày nhập: </td>
+                            <td><input type="date" id="ngaynhap" class="date2"></td>
+                        </tr>
+                        <tr>
+                            <td>Nhà cung cấp:</td>
+                            <td>
+                                <select id="nhacc" style="margin-left: 10px; height: 30px; font-weight: bold;">
+                                    <option>Nhà CC 1</option>
+                                    <option>Nhà CC 2</option>
+                                    <option>Nhà CC 3</option>
+                                    <option>Nhà CC 4</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <button onclick="submit()">Submit</button>
+                </div>
+
+            </div>
+            <div class="right4"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="img">
+            <img src="./logo.png" alt="logo">
+        </div>
+        <div class="contact">
+            <span>Số điện thoại liên hệ:</span>
+            <div class="sdt">
+                Hotline: 19008888
+                <br>
+                Di động: 0333968888
+            </div>
+        </div>
+        <div class="diachi">
+            <span>Địa chỉ:</span>
+            <h3>Trịnh Văn Bô, Nam Từ Niêm, Hà Nội</h3>
+        </div>
+        <div class="qr">
+            <img src="https://vi.qr-code-generator.com/wp-content/themes/qr/new_structure/markets/basic_market/generator/dist/generator/assets/images/websiteQRCode_noFrame.png"
+                alt="">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="nhapkho.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý đơn hàng</title>
+    <link rel="stylesheet" href="quanlykho+donhang.css">
+    <link rel="stylesheet" href="quanlydonhang.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="./logo.png" alt="">
+        <h1>Quản lí đơn hàng</h1>
+    </div>
+    <div class="container">
+        <div class="body-left">
+            <a href="quanlykho.html">
+                <div>
+                    <img src="./kho.png" alt="bán hàng">
+                    <h4>Kho</h4>
+                </div>
+            </a>
+            <a href="nhapkho.html">
+                <div >
+                    <img src="./nhapkho.png" alt="Trang chủ" style="height: 35px;">
+                    <h4>Nhập kho</h4>
+                </div>
+            </a>
+            <a href="quanlydonhang.html">
+                <div style="background-color: rgba(72, 191, 227, 0.996);" class="active">
+                    <img src="./taodon2.png" alt="Trang chủ">
+                    <h4 style="color: white">Đơn hàng</h4>
+                </div>
+            </a>
+        </div>
+        <div class="body-right">
+            <div class="right1">
+                <div class="right1-contain" style="background-color: rgb(248, 101, 101);">
+                    <div class="img"><img src="./tienbanhang.png" alt=""></div>
+                    <div class="text">
+                        <span>Tổng số đơn</span>
+                        <br>
+                        <span style="font-weight: bold;" id="tongdon">0</span>
+                        <!-- <input type="text" id="" readonly> -->
+                    </div>
+                </div>
+                <div class="right1-contain" style="background-color: rgb(101, 101, 247);">
+                    <div class="img"><img src="./sodonhang.png" alt=""></div>
+                    <div class="text">
+                        <div class="text2-1">
+                            <span>Thu được trong ngày</span>
+                            <br>
+                            <Span id="tongtienngay" style="font-weight: bold;">0</Span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right1-contain" style="background-color: rgb(65, 190, 177);">
+                    <div class="img"><img src="./sua.png" alt=""></div>
+                    <div class="text">
+                        <span>Số đơn trong ngày</span>
+                        <br>
+                        <Span id="donngay" style="font-weight: bold;">0</Span>
+                    </div>
+                </div>
+                <div class="right1-contain" style="background-color: rgb(98, 212, 57);">
+                    <div class="img"><img src="./xoa.png" alt=""></div>
+                    <div class="text">
+                        <span>Đã huỷ trong ngày</span>
+                        <br>
+                        <Span id="huydon" style="font-weight: bold;">0</Span>
+                    </div>
+                </div>
+            </div>
+            <div class="right3">
+                <div class="look">
+                    <label for="" >ID khách hàng:</label>
+                    <input type="text" id="timid">
+                </div>
+                <div class="look">
+                    <label for="" >Mã đơn hàng: </label>
+                    <input type="text" id="timma">
+                </div>
+                <div class="look">
+                    <label for="" >Số điện thoại:</label>
+                    <input type="number" id="timsdt">
+                </div>
+                <div class="look" style="width: 150px">
+                    <label for="" >Ngày mua:</label>
+                    <input type="date" id="timdate">
+                </div>
+                <button onclick="timKiem()">Tìm kiếm</button>
+                <button onclick="huyTimKiem()">Xoá tìm kiếm</button>
+            </div>
+            <div class="tieude active">
+                <div class="text" style="padding-bottom: 10px;">Kết quả tìm kiếm:</div>
+                <div class="img"><img src="./back.png" alt="" class="dieuhuong"></div>
+            </div>
+            <div class="ketqua">
+                <div class="table" >
+                    <table border=1 cellspacing=0 id="timkiem">
+                        <tr>
+                            <th>STT</th>
+                            <th>ID khách hàng</th>
+                            <th>Mã đơn hàng</th>
+                            <th>Tên món</th>
+                            <th>Địa chỉ</th>
+                            <th>Số điện thoại</th>
+                            <th>Phí ship</th>
+                            <th>Tổng giá</th>
+                            <th>Ngày mua</th>
+                            <th>Ghi chú KH</th>
+                            <th>Ghi chú</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="right4">
+                <div class="text">Thông tin đơn hàng:</div>
+                <div class="table">
+                    <table border=1 cellspacing=0 id="render">
+                        <tr>
+                            <th>STT</th>
+                            <th>ID khách hàng</th>
+                            <th>Mã đơn hàng</th>
+                            <th>Tên món</th>
+                            <th>Địa chỉ</th>
+                            <th>Số điện thoại</th>
+                            <th>Phí ship</th>
+                            <th>Tổng giá</th>
+                            <th>Ngày mua</th>
+                            <th>Ghi chú KH</th>
+                            <th>Ghi chú</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="img">
+            <img src="./logo.png" alt="logo">
+        </div>
+        <div class="contact">
+            <span>Số điện thoại liên hệ:</span>
+            <div class="sdt">
+               Hotline: 19008888
+               <br>
+               Di động: 0333968888
+            </div>
+        </div>
+        <div class="diachi">
+            <span>Địa chỉ:</span>
+            <h3>Trịnh Văn Bô, Nam Từ Niêm, Hà Nội</h3>
+        </div>
+        <div class="qr">
+            <img src="https://vi.qr-code-generator.com/wp-content/themes/qr/new_structure/markets/basic_market/generator/dist/generator/assets/images/websiteQRCode_noFrame.png" alt="">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="quanlydonhang.js"></script>
+</body>
+
+</html>
