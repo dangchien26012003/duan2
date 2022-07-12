@@ -1,0 +1,520 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(243, 242, 242);
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+    
+    
+}
+
+.page-nhandon {
+    position: relative;
+    overflow: hidden;
+}
+.header {
+    width: 100%;
+    background-color: rgba(4, 4, 65, 0.866);
+    height: 48px;
+}
+
+.header .nav-menu {
+    position: relative
+}
+
+.header .nav-menu .menu {
+    display: flex;
+    list-style: none;
+}
+
+.header .nav-menu .menu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header .nav-menu .menu a.active{
+    background-color: rgba(4, 4, 65, 0.866);
+}
+
+.header .nav-menu .menu a li{
+    padding: 0px 30px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    /* border-right: 1.5px solid rgb(129, 129, 129); */
+}
+
+.header .nav-menu .menu a:hover {
+    background-color: rgba(4, 4, 65, 0.866)
+}
+
+.navbar-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header .nav-menu #navbar {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(4, 4, 65, 0.866);
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s ease-in-out;
+}
+
+.header .nav-menu #navbar::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 28px;
+    background-color: white;
+    transform: translateY(-6px);
+    transition: 0.25s ease-in-out;
+
+}
+
+.header .nav-menu #navbar::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 28px;
+    background-color: white;
+    transform: translatey(6px);
+    transition: 0.25s ease-in-out;
+}
+
+.header .nav-menu #navbar.open::before {
+    transform: rotate(45deg);
+}
+
+.header .nav-menu #navbar.open::after {
+    transform: rotate(-45deg);
+}
+
+.header .nav-menu #navbar.open {
+    background-color: rgb(230, 65, 65)
+}
+
+.boder {
+    position: relative;
+    height: calc(100% - 48px);
+    display: flex;
+    justify-content: center
+}
+
+.boder .gg-map {
+    padding: 0;
+}
+
+
+.boder .info-donhang {
+    position: absolute;
+    bottom: 15px;
+    height: 240px;
+    width: 98%;
+    background-color: rgb(186, 224, 244);
+    border-radius: 5px
+}
+
+.boder .info-donhang .icon-ship {
+    font-size: 20px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(250, 125, 0);
+}
+
+.boder .info-donhang span {
+    font-size: 15px;
+    color: black;;
+    font-weight: 500
+
+}
+
+.boder .info-donhang .vitri {
+    display: flex;
+}
+
+
+.boder .info-donhang .vitri .khoangcach, .gia {
+    width: 50%;
+    padding: 5px
+}
+
+.boder .info-donhang .vitri span {
+    font-weight: bold
+}
+
+.boder .info-donhang .vitrinhanhang {
+    background-color: white;
+}
+
+.boder .info-donhang .vitrinhanhang .top {
+    display: flex;
+    background-color: white;
+    justify-content: space-between
+}
+
+.boder .info-donhang .vitrinhanhang .top .vitri {
+    display: flex;
+    align-items: center;
+}
+
+.boder .info-donhang .vitrinhanhang .top .vitri .dot {
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 0 0 5px red;
+    margin: 0 5px;
+}
+
+.boder .info-donhang .vitrinhanhang .top .giatridonhang span:last-child {
+    color: red;
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.boder .info-donhang .vitrinhanhang .bottom {
+    height: 50px;
+    position: relative;
+}
+
+.boder .info-donhang .vitrinhanhang .bottom span {
+    display: block;
+    font-size: 18px;
+    padding: 5px 
+}
+
+.boder .info-donhang .vitrinhanhang .bottom .icon {
+    position: absolute;
+    left: 50%;
+    bottom: -7px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.boder .info-donhang .vitrinhanhang .bottom .icon:hover {
+    bottom: -9px;
+}
+/*  */
+.boder .info-donhang .vitriden .top{
+    display: flex;
+    justify-content: space-between
+}
+
+.boder .info-donhang .vitriden .top .vitri {
+    display: flex;
+    align-items: center;
+}
+
+.boder .info-donhang .vitriden .top .vitri .dot {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(77, 208, 77);
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgb(77, 208, 77);
+    margin: 0 5px
+}
+
+.boder .info-donhang .vitriden .top .tongdonhang span:last-child {
+    color: rgb(77, 208, 77);
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.boder .info-donhang .vitriden .bottom span {
+    display: block;
+    font-size: 18px;
+    padding: 10px 
+}
+
+.boder .info-donhang .nhandon {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.boder .info-donhang .nhandon a {
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(35, 117, 205, 0.806);
+    border-radius: 10px;
+    padding: 0 30px;
+}
+
+.boder .info-donhang .nhandon a:hover {
+    box-shadow: 0 0 10px rgba(21, 89, 161, 0.859) inset;
+}
+
+.info-shiper {
+    height: calc(100% - 48px);
+    width: 40%;
+    position: absolute;
+    top: 48px;
+    right: -40%;
+    background-color: rgba(255, 255, 255, 0.862);
+    transition: .5s ease-in-out;
+}
+
+.info-shiper.open {
+    display: block;
+    right: 0;
+    transition: .5s ease-in-out;
+}
+
+.info-shiper .img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.819);
+    border-bottom: 1px solid rgba(150, 149, 149, 0.679);
+}
+
+.info-shiper .img img {
+    height: 70px;
+    border-radius: 100rem;
+    margin: 10px
+}
+
+.info-shiper .contain-thongtin {
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+}
+
+.info-shiper .thongtin div {
+    padding-bottom: 10px;
+}
+
+.info-shiper .thongtin div span{
+    color: rgba(68, 62, 62, 0.933);
+    padding-left: 5px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+
+.info-shiper .thongtin div span:nth-child(1) {
+    width: 100px;
+    display: inline-block;
+}
+
+.info-shiper .thongtin div span:nth-child(2) {
+    font-weight: bold;
+}
+
+
+
+
+/* dơn hien tại */
+.donhientai {
+    position: relative;
+    overflow: hidden;
+}
+
+.donhientai .border .madonhang{
+    background-color: rgb(50, 50, 50);
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+}
+
+.donhientai .border .madonhang span{ 
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 14px;
+}
+
+.border-2{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(162, 223, 243, 0.677);
+    padding: 10px;
+}
+
+
+
+/* left */
+.border-2 .border-2_left .icon-ship {
+    font-size: 18px;
+    padding-bottom: 5px;
+    font-family: 'Lato', sans-serif;
+    color: rgb(250, 125, 0);
+}
+
+.border-2 .border-2_left span {
+    font-size: 15px;
+    color: black;;
+    font-weight: 500
+}
+
+
+/* right */
+
+.border-2-right span{
+    display: block;
+    text-align: right;
+}
+
+.border-2-right span:not(:nth-child(2)) {
+    color: rgba(54, 196, 51, 0.904);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* boder3 */
+
+.border-3 {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin: 5px 0;
+    height: 40px;
+    align-items: center
+}
+
+.border-3 a .tongdai {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin: 0 10px;
+    border: 2px solid rgb(89, 89, 223);
+    border-radius: 3px;
+}
+
+.border-3 a .tongdai .icon {
+    padding: 0 10px 0 0;
+    color: rgb(89, 89, 223);
+    cursor: pointer;
+}
+
+.border-4 {
+    padding: 10px 0 0 30px;
+    background-color: white;
+}
+
+.border-4 .ng2 {
+    height: 50px;
+    background-color: rgba(233, 233, 233, 0.402);
+    padding: 5px
+}
+
+.border-4  .ng3{
+    display: flex;
+    justify-content: space-between;
+}
+
+.border-4  .ng3 .sdt {
+    padding: 5px 5px;
+    margin: 5px 0;
+    background-color: rgba(0, 65, 169, 0.608);
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.border-4  .ng3 .sdt span,  .border-4  .ng3 .sdt i{
+    font-size: 14px;
+    font-weight: 600
+}
+
+.border-4  .ng3 .chat {
+    padding: 5px 10px;
+    margin: 5px 10px 5px 0;
+    border:2px solid rgb(77, 208, 77);
+    color: rgb(38, 185, 38);
+    border-radius: 3px;
+    cursor: pointer
+}
+
+.border-4  .ng4 .ghichu {
+    border: 2px solid rgba(244, 107, 107, 0.775);
+    margin-right: 10px;
+    margin-top: 5px;
+    background-color:rgba(239, 241, 182, 0.676)
+}
+
+.border-4  .ng4 .ghichu span {
+    display: block;
+    padding: 5px 10px;
+}
+
+.nguoinhan {
+    padding: 10px 0;
+}
+
+.nguoinhan .map-icon {
+    padding: 5px 10px;
+    background-color: aquamarine;
+    display: inline-block;
+    border-radius: 3px;
+    font-weight: 600;
+    
+}
+
+.hoanthanh {
+    margin: 10px 0;
+    background-color: white;
+    height: 90px;
+}
+
+.hoanthanh .top-ht {
+    padding: 10px 20px;
+    font-size: 12px;
+    color: rgb(90, 89, 89);
+}
+
+.hoanthanh .top-ht .icon-ht{
+    color: #ccc;
+    display: inline-block;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.hoanthanh .top-ht .icon-ht.active{
+    color: green
+}
+.hoanthanh .xacnhan {
+    background-color:green;
+    height: 30px;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hoanthanh .xacnhan a {
+    text-decoration: none;
+}
+
+.hoanthanh .xacnhan .icon i {
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.594);
+    font-size: 18px
+}
+
+.hoanthanh .xacnhan:hover .icon i {
+    color: rgb(255, 255, 255);
+}
